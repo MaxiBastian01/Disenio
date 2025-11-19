@@ -1,0 +1,149 @@
+/* BASE */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #ffffff;
+}
+
+/* Video de fondo */
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    filter: brightness(60%);
+}
+
+/*  Cuadro de Redes superior */
+.hero-top {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    border: 2px solid #00e5ff;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 18px rgba(0, 229, 255, 0.5);
+    z-index: 3;
+}
+
+.titulo-top {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+.redes img {
+    width: 45px;
+    margin: 0 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #00e5ff);
+}
+
+/*  CUADRO PRINCIPAL */
+.hero-container {
+    position: absolute;
+    top: 25%;
+    /* distancia fija desde arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    /* solo centramos en X */
+    width: 75%;
+    max-width: 1100px;
+    padding: 50px 60px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 25px;
+    border: 2px solid #00e5ff;
+    box-shadow: 0 0 35px rgba(0, 229, 255, 0.4);
+    backdrop-filter: blur(25px);
+    text-align: center;
+    transition: .3s;
+}
+
+/*  Cards */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card {
+    width: 32%;
+    background: rgba(0, 229, 255, 0.15);
+    border-radius: 15px;
+    border: 2px solid #00e5ff;
+    padding: 30px 20px;
+    cursor: pointer;
+    backdrop-filter: blur(12px);
+    transition: .3s;
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 229, 255, 0.35);
+}
+/*  Secciones internas ocultas */
+.info-section {
+    display: none;
+    animation: fade .3s ease-in-out;
+}
+
+.info-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.info-section p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Botón VOLVER */
+.back {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: #00e5ff;
+    font-weight: 700;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+/* Animación */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - MaxiBastian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/css/perfil.css">
+</head>
+
+<body>
+
+    <video autoplay muted loop id="videoFondo">
+        <source src="asset/videos/luffy.mp4" type="video/mp4">
+    </video>
+
+    <header class="hero-top">
+        <h2 class="titulo-top">Mis Redes</h2>
+        <div class="redes">
+            <a href="https://github.com/MaxiBastian01" target="_blank">
+                <img src="asset/img/Icons/github-sign.png" alt="GitHub">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="asset/img/Icons/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </header>
+
+    <main class="hero-container">
+
+        <div class="card-container">
+
+            <div class="card" onclick="showSection('estudios')">
+                <h3>Estudios</h3>
+            </div>
+
+            <div class="card" onclick="showSection('objetivo')">
+                <h3>Objetivo</h3>
+            </div>
+
+            <div class="card" onclick="showSection('sobremi')">
+                <h3>Sobre mí</h3>
+            </div>
+
+            <div class="card" onclick="showSection('miblog')">
+                <h3>Mi Blog</h3>
+            </div>
+
+        </div>
+        <!-- SECCIÓN ESTUDIOS -->
+        <div class="info-section" id="estudios">
+            <span class="back" onclick="backToMenu()">◀ Volver</span>
+            <h2>Estudios</h2>
+
+            <p>
+                <strong>Licenciatura en Sistemas – UADER</strong><br>
+                Formación en Ingeniería de Software, Programación Orientada a Objetos y
+                Algoritmos & Estructuras de Datos.<br><br>
+
+                <strong>Experiencia:</strong> Java, Python, Desarrollo Web, APIs REST.
+            </p>
+        </div>
+
+        <!-- SECCIÓN OBJETIVO -->
+        <div class="info-section" id="objetivo">
+            <span class="back" onclick="backToMenu()">◀ Volver</span>
+            <h2>Objetivo</h2>
+            <p>
+                Convertirme en Desarrollador Full Stack 💻<br>
+                Y aprender a crear jueguitos
+                
+            </p>
+        </div>
+
+        <!-- SECCIÓN SOBRE MI -->
+        <div class="info-section" id="sobremi">
+            <span class="back" onclick="backToMenu()">◀ Volver</span>
+            <h2>Sobre mí</h2>
+            <p>Me llamo Maxi Bastian, Tengo 23 años 🇦🇷<br>Soy de CdelU </p>
+        </div>
+
+        <!-- SECCIÓN MI BLOG -->
+        <div class="info-section" id="miblog" style="
+            margin-top: 60px;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding-right: 10px;
+        ">
+            <span class="back" onclick="backToMenu()">◀ Volver</span>
+            <h2>Mi Blog</h2>
+
+            <div style="
+                background: rgba(0,0,0,0.5);
+                padding: 20px;
+                border-radius: 12px;
+                margin-top: 20px;
+                backdrop-filter: blur(5px);
+                color: #fff;
+            ">
+
+                <h3>Que me gusta hacer?</h3>
+                <p>
+                    Como buen estudiante de sistemas promedio, me gusta jugar a los jueguitos.<br>
+                    Acá un poco más sobre mis gustos:
+                </p>
+
+                <!-- CARDS INTERNAS -->
+                <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 25px;">
+
+                    <!-- CARD YO -->
+                    <div style="
+                        background: rgba(0,0,0,0.45);
+                        border: 2px solid rgba(255,255,255,0.2);
+                        border-radius: 12px;
+                        padding: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        backdrop-filter: blur(4px);
+                    ">
+                        <h3 style="margin-bottom: 15px;">Yo</h3>
+
+                        <img src="asset/img/maxi.png" alt="Mi foto"
+                            style="width: 60%; max-width: 250px; display: block; margin: 0 auto 15px; border-radius: 10px;">
+
+                        <p>Habilidades:</p>
+                        <ol style="margin-left: 20px;">
+                            <li>Es el IGL del team</li>
+                            <li>Piensa usando la cabeza</li>
+                            <li>Siempre está calmado</li>
+                            <li>Lo comparan con Peterbot</li>
+                        </ol>
+                    </div>
+
+                    <!-- CARD MI DUO -->
+                    <div style="
+                        background: rgba(0,0,0,0.45);
+                        border: 2px solid rgba(255,255,255,0.2);
+                        border-radius: 12px;
+                        padding: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        backdrop-filter: blur(4px);
+                    ">
+                        <h3 style="margin-bottom: 15px;">Mi Dúo</h3>
+
+                        <img src="asset/img/luchi.png" alt="Mi dúo"
+                            style="width: 60%; max-width: 250px; display: block; margin: 0 auto 15px; border-radius: 10px;">
+
+                        <p>Habilidades:</p>
+                        <ol style="margin-left: 20px;">
+                            <li>Es el perro rabioso
+                            <li>Grita cuando está en peligro</li>
+                            <li>Máquina del SideJump</li>
+                            <li>SupraKid</li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <!-- CARD VIDEO -->
+                <div style="
+                    background: rgba(0,0,0,0.45);
+                    border: 2px solid rgba(255,255,255,0.2);
+                    border-radius: 12px;
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    backdrop-filter: blur(4px);
+                    margin-top: 20px;
+                ">
+                    <h3 style="margin-bottom: 15px;">Nuestro Gameplay</h3>
+
+                    <video controls style="
+                        width: 100%;
+                        max-width: 500px;
+                        border-radius: 10px;
+                        margin: 0 auto;
+                    ">
+                        <source src="esmuypesadoparagit:()" type="video/mp4">
+                        Tu navegador no soporta video.
+                    </video>
+
+                    <p style="margin-top: 15px;">
+                        <br>
+                        Pasando Verguenza
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function showSection(id) {
+                document.querySelector(".card-container").style.display = "none";
+                document.getElementById(id).style.display = "block";
+            }
+
+            function backToMenu() {
+                document.querySelectorAll(".info-section").forEach(sec => sec.style.display = "none");
+                document.querySelector(".card-container").style.display = "flex";
+            }
+        </script>
+
+    </main>
+
+</body>
+
+</html>
